@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    int n; printf("Side length (rows): "); scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int s=0;s<n-i;s++) putchar(' ');
+        for(int j=0;j<n;j++) putchar('*');
+        putchar('\n');
+    }
+    return 0;
+}
