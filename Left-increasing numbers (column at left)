@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Rows (e.g. 10): ");
+    if (scanf("%d", &n)!=1) return 0;
+
+    for (int i = 1; i <= n; ++i) {
+        for (int x = 1; x <= i; ++x)
+            printf("%d", x);
+        putchar('\n');
+    }
+    return 0;
+}
