@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Rows (e.g. 6): ");
+    if (scanf("%d", &n)!=1) return 0;
+
+    for (int i = 1; i <= n; ++i) {
+    
+        for (int s = 0; s < (n - i) * 1; ++s) putchar(' ');
+        for (int k = 0; k < i; ++k) printf("10");
+        putchar('\n');
+    }
+    return 0;
+}
